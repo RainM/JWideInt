@@ -20,7 +20,7 @@
 	  <execution>
 	    <phase>process-classes</phase>
 	    <configuration>
-	      <target name="jni" description="Building JNI library">
+	      <target name="jnilib" description="Building JNI library">
 		<echo>Processing JNI</echo>
 		<exec executable="make" failonerror="true">
 		  <arg value="headers" />
