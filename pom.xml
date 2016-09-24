@@ -23,9 +23,6 @@
 	      <target name="jnilib" description="Building JNI library">
 		<echo>Processing JNI</echo>
 		<exec executable="make" failonerror="true">
-		  <arg value="headers" />
-		</exec>
-		<exec executable="make" failonerror="true">
 		  <arg value="jnilib" />
 		</exec>
 	      </target>
