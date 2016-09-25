@@ -65,7 +65,14 @@ public class WInt128Test {
         BigInteger bi = BigInteger.valueOf(123123123123123l);
         WInt128 i1 = new WInt128(bi);
         assert i1.toBigInteger().equals(bi);
-    }    
+    }
+    
+    @Test
+    public void test_ctor6() {
+        WInt128 i1 = new WInt128(123123123123123l);
+        WInt128 i2 = new WInt128(i1);
+        assert i1.equals(i2);
+    }
 
     @Test
     public void test_add1() {

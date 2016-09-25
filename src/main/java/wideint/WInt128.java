@@ -19,10 +19,11 @@ public class WInt128 extends Number implements Comparable<WInt128> {
         this.__double_data = 0.0;
     }
 
-    public WInt128(WInt128 i) {
-        this.__byte_data[0] = i.__byte_data[0];
-        this.__byte_data[1] = i.__byte_data[1];
-        this.__double_data    = i.__double_data;
+    public WInt128(WInt128 wi) {
+        for (int i = 0; i < this.__byte_data.length; ++i) {
+            this.__byte_data[i] = wi.__byte_data[i];
+        }
+        this.__double_data    = wi.__double_data;
     }
 
     public WInt128(long l) {
@@ -105,6 +106,20 @@ public class WInt128 extends Number implements Comparable<WInt128> {
             beData[i] = this.__byte_data[this.__byte_data.length - i - 1];
         }
         return new BigInteger(beData);
+    }
+    
+    @Override
+    public boolean equals(Object o) {
+        if (o instanceof WInt128) {
+            WInt128 wi = (WInt128)o;
+            for (int i = 0; i < wi.__byte_data.length; ++i) {
+                if (wi.__byte_data[i] != this.__byte_data[i]) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        return false;
     }
     
     static {
