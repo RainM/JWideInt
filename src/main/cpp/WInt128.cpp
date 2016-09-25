@@ -27,8 +27,8 @@ Java_wideint_WInt128__1_1native_1i128_1setl(
 }
 
 /*
- * Class:     wideint_WInt
- * Method:    __native_add
+ * Class:     wideint_WInt128
+ * Method:    __native_i128_add
  * Signature: ([B[B)V
  */
 JNIEXPORT void JNICALL
@@ -49,8 +49,8 @@ Java_wideint_WInt128__1_1native_1i128_1add(
 }
 
 /*
- * Class:     wideint_WInt
- * Method:    __native_sub
+ * Class:     wideint_WInt128
+ * Method:    __native_i128_sub
  * Signature: ([B[B)V
  */
 JNIEXPORT void JNICALL
@@ -71,8 +71,8 @@ Java_wideint_WInt128__1_1native_1i128_1sub(
 }
 
 /*
- * Class:     wideint_WInt
- * Method:    __native_mul
+ * Class:     wideint_WInt128
+ * Method:    __native_i128_mul
  * Signature: ([B[B)V
  */
 JNIEXPORT void JNICALL
@@ -93,8 +93,8 @@ Java_wideint_WInt128__1_1native_1i128_1mul(
 }
 
 /*
- * Class:     wideint_WInt
- * Method:    __native_div
+ * Class:     wideint_WInt128
+ * Method:    __native_i128_div
  * Signature: ([B[B)V
  */
 JNIEXPORT void JNICALL
@@ -132,8 +132,8 @@ Java_wideint_WInt128__1_1native_1i128_1to_1long(
 }
 
 /*
- * Class:     wideint_WInt
- * Method:    __native_to_double
+ * Class:     wideint_WInt128
+ * Method:    __native_i128_to_double
  * Signature: ([B)D
  */
 JNIEXPORT jdouble JNICALL
