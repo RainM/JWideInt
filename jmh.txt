@@ -1,0 +1,7 @@
+mvn archetype:generate \
+          -DinteractiveMode=false \
+          -DarchetypeGroupId=org.openjdk.jmh \
+          -DarchetypeArtifactId=jmh-java-benchmark-archetype \
+          -DgroupId=efx \
+          -DartifactId=test \
+          -Dversion=1.0
