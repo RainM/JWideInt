@@ -11,4 +11,4 @@ Implemented via JNI library written in C++.
 C++ build step is integrated in maven via ant build step, which runs make, Therefore, there is no need to run gcc/make explicitly.
 
 ## WInt128
-Mutable 128-bit integer class
+general.Mutable 128-bit integer class

@@ -17,6 +17,11 @@
       <scope>test</scope>
       <type>jar</type>
     </dependency>
+      <dependency>
+          <groupId>org.apache.commons</groupId>
+          <artifactId>commons-collections4</artifactId>
+          <version>RELEASE</version>
+      </dependency>
   </dependencies>
   <build>
     <plugins>
